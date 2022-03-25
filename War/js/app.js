@@ -51,13 +51,34 @@ document.getElementById(`roll`).addEventListener(`click`, function(){
         } else if (humanArray[j] < computerArray[j]){
             computerPoints += 1;
             document.getElementById(`computerScore`).innerHTML = computerPoints;
+            if(j === 0){
+                document.getElementById(`firstBattle`).innerHTML = `Blue's ` + computerArray[j] + ` beat Red's ` + humanArray[j];
+            } else if(j === 1){
+                document.getElementById(`secondBattle`).innerHTML = `Blue's ` + computerArray[j] + ` beat Red's ` + humanArray[j];
+            } else if(j === 2){
+                document.getElementById(`thirdBattle`).innerHTML = `Blue's ` + computerArray[j] + ` beat Red's ` + humanArray[j];
+            } else if(j === 3){
+                document.getElementById(`fourthBattle`).innerHTML = `Blue's ` + computerArray[j] + ` beat Red's ` + humanArray[j];
+            } else if(j === 4){
+                document.getElementById(`fifthBattle`).innerHTML = `Blue's ` + computerArray[j] + ` beat Red's ` + humanArray[j];
+            }
         } else if (humanArray[j] === computerArray[j]){
             computerPoints += 0;
             humanPoints += 0;
+            if(j === 0){
+                document.getElementById(`firstBattle`).innerHTML = `Red's ` + computerArray[j] + ` tied Blue's ` + humanArray[j];
+            } else if(j === 1){
+                document.getElementById(`secondBattle`).innerHTML = `Red's ` + computerArray[j] + ` tied Blue's ` + humanArray[j];
+            } else if(j === 2){
+                document.getElementById(`thirdBattle`).innerHTML = `Red's ` + computerArray[j] + ` tied Blue's ` + humanArray[j];
+            } else if(j === 3){
+                document.getElementById(`fourthBattle`).innerHTML = `Red's ` + computerArray[j] + ` tied Blue's ` + humanArray[j];
+            } else if(j === 4){
+                document.getElementById(`fifthBattle`).innerHTML = `Red's ` + computerArray[j] + ` tied Blue's ` + humanArray[j];
+            }
         }
     }
     humanArray = [];
     computerArray = [];
     document.getElementById(`roll`).disabled = false;
 });
-
