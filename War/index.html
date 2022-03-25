@@ -8,14 +8,93 @@
     <title>War</title>
 </head>
 <body>
-    <h1>War Game</h1>
-    <div id="gridContainer1">
-        <div id="firstRow1">
-            <img src="pix/red.png" alt="red soldier" id="redSoldier">
+    <header>
+        <h1>War Game</h1>
+    </header>
+    <main>
+        <div>
+            <p>Human Score: <span id="humanScore"></span></p>
+            <p>Computer Score: <span id="computerScore"></span></p>
+            <button type="submit" id="roll">Roll!</button>
         </div>
-        <div id="firstRow2">
-            <img src="pix/blue.png" alt="blue soldier" id="blueSoldier">
+        <div id="gridContainer">
+            <div id="red">
+                <img src="pix/red.png" alt="red soldier" id="redSoldier">
+            </div>
+            <div id="red">
+                <p id="firstRedNumber">1</p>
+            </div>
+            <div id="blue">
+                <p id="firstBlueNumber">1</p>
+            </div>
+            <div id="blue">
+                <img src="pix/blue.png" alt="blue soldier" id="blueSoldier">
+            </div>
         </div>
-    </div>
+        <div id="gridContainer">
+            <div id="red">
+                <img src="pix/red.png" alt="red soldier" id="redSoldier">
+            </div>
+            <div id="red">
+                <p id="secondRedNumber">1</p>
+            </div>
+            <div id="blue">
+                <p id="secondBlueNumber">1</p>
+            </div>
+            <div id="blue">
+                <img src="pix/blue.png" alt="blue soldier" id="blueSoldier">
+            </div>
+        </div>
+        <div id="gridContainer">
+            <div id="red">
+                <img src="pix/red.png" alt="red soldier" id="redSoldier">
+            </div>
+            <div id="red">
+                <p id="thirdRedNumber">1</p>
+            </div>
+            <div id="blue">
+                <p id="thirdBlueNumber">1</p>
+            </div>
+            <div id="blue">
+                <img src="pix/blue.png" alt="blue soldier" id="blueSoldier">
+            </div>
+        </div>
+        <div id="gridContainer">
+            <div id="red">
+                <img src="pix/red.png" alt="red soldier" id="redSoldier">
+            </div>
+            <div id="red">
+                <p id="fourthRedNumber">1</p>
+            </div>
+            <div id="blue">
+                <p id="fourthBlueNumber">1</p>
+            </div>
+            <div id="blue">
+                <img src="pix/blue.png" alt="blue soldier" id="blueSoldier">
+            </div>
+        </div>
+        <div id="gridContainer">
+            <div id="red">
+                <img src="pix/red.png" alt="red soldier" id="redSoldier">
+            </div>
+            <div id="red">
+                <p id="fifthRedNumber">1</p>
+            </div>
+            <div id="blue">
+                <p id="fifthBlueNumber">1</p>
+            </div>
+            <div id="blue">
+                <img src="pix/blue.png" alt="blue soldier" id="blueSoldier">
+            </div>
+        </div>
+        <div id="battleLog">
+            <p>First Battle: <span id="firstBattle"></span></p>
+            <p>Second Battle: <span id="secondBattle"></span></p>
+            <p>Third Battle: <span id="thirdBattle"></span></p>
+            <p>Fourth Battle: <span id="fourthBattle"></span></p>
+            <p>Fifth Battle: <span id="fifthBattle"></span></p>
+        </div>
+    </main>
 </body>
+<script src="js/app.js"></script>
 </html>
